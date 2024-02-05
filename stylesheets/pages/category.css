@@ -1,1 +1,111 @@
 /* 카테고리별 추천 광고상품 */
+.wrap {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+header {
+    margin-top: 100px;
+    margin-bottom: 48px;
+}
+
+/* 추천 광고상품 */
+
+#ad {
+    width: 100%;
+    height: 1376px;
+}
+
+/* 타이틀 */
+.title h2 {
+    font-size: 16px;
+    line-height: 115%;
+    font-weight: 500px;
+    color: var(--color-black);
+    margin: 0px;
+}
+
+.title h3 {
+    font-size: 24px;
+    line-height: 115%;
+    font-weight: 700;
+    color: var(--color-black);
+    margin: 0px;
+}
+
+.title h3 span {
+    color: var(--color-blue-600);
+}
+/* 콘텐츠 */
+.goods {
+    width: 100%;
+    height: 634px;
+    margin-top: 24px;
+    display: flex;
+}
+
+.living {
+    border-top: 1px solid var(--color-brown-300);
+    border-bottom: 1px solid var(--color-brown-300);
+}
+
+.kichen {
+    border-top: 1px solid var(--color-green-700);
+    border-bottom:1px solid var(--color-green-700);
+}
+
+
+.a {
+    width: 174px;
+    height: 100%;
+}
+
+.b {
+    width: 320px;
+    height: 100%;
+}
+
+.c {
+    width: 526px;
+    height: 100%;
+}
+
+/* 좌측 */
+.a h4 {
+    font-size: 24px;
+    line-height: 115%;
+    font-weight: 500;
+    margin: 48px auto 8px 24px;
+}
+
+.living h4 {
+    color: var(--color-brown-300);
+}
+
+.kichen h4 {
+    color: var(--color-green-700);
+}
+
+.a a {
+    width: 62px;
+    height: 18px;
+    color: var(--color-gray-700);
+    display: inline-block;
+    margin-left: 24px;
+
+    font-size: 14px;
+    line-height: 120%;
+    font-weight: 700;
+
+    background-image: url(../../assets/icon/angle-right-default.svg);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: center;
+}
+
+.hotkey div {
+    font-size: 18px;
+    line-height: 115%;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
