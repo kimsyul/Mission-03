@@ -17,7 +17,7 @@ header {
 }
 
 /* 타이틀 */
-.title h2 {
+.trend {
     font-size: 16px;
     line-height: 115%;
     font-weight: 500px;
@@ -25,7 +25,7 @@ header {
     margin: 0px;
 }
 
-.title h3 {
+.recommend {
     font-size: 24px;
     line-height: 115%;
     font-weight: 700;
@@ -33,7 +33,7 @@ header {
     margin: 0px;
 }
 
-.title h3 span {
+.recommend span {
     color: var(--color-blue-600);
 }
 /* 콘텐츠 */
@@ -51,42 +51,43 @@ header {
 
 .kichen {
     border-top: 1px solid var(--color-green-700);
-    border-bottom:1px solid var(--color-green-700);
+    border-bottom: 1px solid var(--color-green-700);
 }
 
-
-.a {
+.info {
     width: 174px;
     height: 100%;
+
+    position: relative;
 }
 
-.b {
+.slide {
     width: 320px;
     height: 100%;
 }
 
-.c {
+.item {
     width: 526px;
     height: 100%;
 }
 
 /* 좌측 */
-.a h4 {
+.info h3 {
     font-size: 24px;
     line-height: 115%;
     font-weight: 500;
     margin: 48px auto 8px 24px;
 }
 
-.living h4 {
+.living h3 {
     color: var(--color-brown-300);
 }
 
-.kichen h4 {
+.kichen h3 {
     color: var(--color-green-700);
 }
 
-.a a {
+.baro {
     width: 62px;
     height: 18px;
     color: var(--color-gray-700);
@@ -103,9 +104,197 @@ header {
     background-position-y: center;
 }
 
-.hotkey div {
+.hotkey {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+    margin-left: 24px;
+
+    position: absolute;
+    bottom: 28px;
+}
+
+.hotkey > span {
     font-size: 18px;
     line-height: 115%;
     font-weight: 500;
     margin-bottom: 20px;
+}
+
+.living-tag {
+    padding: 5px 9px;
+    border: 1px solid var(--color-gray-400);
+    background-color: var(--color-white);
+    color: var(--color-brown-300);
+    margin-bottom: 12px;
+
+    font-size: 12px;
+    line-height: 120%;
+    font-weight: 400;
+}
+
+.living-tag:last-of-type {
+    margin-bottom: 0px;
+}
+
+.kichen-tag {
+    padding: 5px 9px;
+    border: 1px solid var(--color-gray-500);
+    background-color: var(--color-white);
+    color: var(--color-green-700);
+    margin-bottom: 12px;
+
+    font-size: 12px;
+    line-height: 120%;
+    font-weight: 400;
+}
+
+.kichen-tag:last-of-type {
+    margin-bottom: 0px;
+}
+
+/* 센터 */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.caption {
+    width: 260px;
+    height: 90px;
+    color: var(--color-white);
+    text-align: center;
+    padding-top: 19px;
+    padding-bottom: 20px;
+
+    position: absolute;
+    left: 30px;
+    bottom: 58px;
+}
+
+.caption p:first-child {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0px;
+    margin-bottom: 8px;
+}
+
+.caption p:last-child {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0px;
+}
+
+.living .caption {
+    background-color: var(--color-brown-300);
+}
+
+.kichen .caption {
+    background-color: var(--color-green-700);
+}
+
+div[class^="indi-"] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.indicator {
+    width: 32px;
+    height: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    left: 142px;
+    bottom: 22px;
+}
+
+.indi-01 {
+    background-color: var(--color-gray-700);
+}
+
+.indi-02 {
+    background-color: var(--color-gray-600);
+}
+
+/* 우측 */
+
+.item {
+    margin: 9px 0px;
+}
+
+.top,
+.bottom {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top {
+    position: relative;
+}
+
+.top::after {
+    content: "";
+    width: 100%;
+    height: 0.5px;
+    background-color: var(--color-gray-600);
+    position: absolute;
+    bottom: 0px;
+    margin: 7.53px 0px 7.97px 0px;
+}
+
+.item a {
+    width: 160px;
+    height: 300px;
+    margin-left: 16px;
+}
+
+.name {
+    width: 152px;
+    line-height: 120%;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 12px auto;
+}
+
+.special {
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 120%;
+    font-weight: 400;
+    color: var(--color-red-500);
+    margin-left: 4px;
+}
+
+.price {
+    margin-left: 4px;
+    display: flex;
+}
+
+.number {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-right: 6px;
+    height: 27px;
+}
+
+.number > span {
+    font-size: 14px;
+    line-height: 120%;
+    font-weight: 400;
+    color: var(--color-black);
 }
